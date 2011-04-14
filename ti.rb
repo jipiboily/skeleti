@@ -41,11 +41,11 @@ end
 
 def generate mvce
   if !mvce
-    puts "no MVCE name"
+    puts "no VCE name"
     return false
   end
   if File.exists? "Resources/app/controller/#{mvce}_controller.js"
-    puts "This MVCE has already been generated or at least the controller is present. Aborted!"
+    puts "This VCE has already been generated or at least the controller is present. Aborted!"
     return false
   end
   msg "generating '" + mvce + "'..."
