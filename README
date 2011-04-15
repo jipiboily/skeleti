@@ -1,9 +1,0 @@
-This is a generator for Titanium Mobile. It is not a framework but just a skeleton app generator and VCE (View Controller Events) generator
-
-
-You can generate MVCE skeleton app or add a VCE
-
-
-usage: 
-	ruby ti.rb new	(in Titanium Mobile root folder)
-	ruby ti.rb g my_controller (where 'my_controller' is a new VCE you want to generate)

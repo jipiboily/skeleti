@@ -1,7 +1,7 @@
 #!/usr/bin/ruby
 require 'fileutils'
-require './lib/file.rb'
-require './lib/content.rb'
+require 'file.rb'
+require 'content.rb'
 
 def is_ti_app?
   File.exists? 'tiapp.xml'
