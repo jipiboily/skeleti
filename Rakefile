@@ -19,6 +19,9 @@ Jeweler::Tasks.new do |gem|
   gem.description = "Skeleti is a little tool to generate a basic skeleton app for Titanium Mobile projects. You can also generate VCE (View, Controller and Events)"
   gem.email = "jp@wizestudios.com"
   gem.authors = ["Jean-Philippe Boily"]
+  gem.executables = ['skeleti', 'ti']
+  gem.require_path = ["lib"]
+
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
   #  gem.add_runtime_dependency 'jabber4r', '> 0.1'

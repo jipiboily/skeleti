@@ -42,3 +42,23 @@ def general_includes_content
 Ti.include(root_path + "config/application.js");
 eos
 end
+
+
+def usage
+<<eos
+**********************************************************
+You can generate MVCE skeleton app or add a VCE
+
+Usage note: you can use either 'ti' or 'skeleti' at prompt. First parameter should be 'new' (n) or 'generate'(g).
+
+Step by step to do for new project:
+  1. cd in your new Titanium Mobile project
+  2. To generate app skeleton, at prompt, type:
+	    ti new      (or 'skeleti new')
+  3. to generate another VCE: 
+	    ti g my_controller		(where 'my_controller' is a new VCE you want to generate)
+
+
+**********************************************************
+eos
+end

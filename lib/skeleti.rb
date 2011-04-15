@@ -67,7 +67,7 @@ def parse_command_line a
   elsif a[0]=="new" || a[0] == "n"
     new_app
   else
-    puts "usage: 'ti new' or 'ti g my_mvce_controller_name' \nFirst parameter should be 'new' (n) or 'generate'(g)."
+    puts usage
   end
 end
 
