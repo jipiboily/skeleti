@@ -2,6 +2,10 @@
 
 Skeleti is is a generator for Titanium Mobile. It is not a framework but just a skeleton app generator and VCE (View Controller Events) generator.
 
+== INSTALL
+
+[sudo] gem install skeleti
+
 == HOW TO
 
 You can generate MVCE skeleton app or add a VCE
