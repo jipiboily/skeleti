@@ -30,6 +30,7 @@ Gem::Specification.new do |s|
     "lib/file.rb",
     "lib/skeleti.rb",
     "pkg/skeleti-0.1.0.gem",
+    "skeleti.gemspec",
     "test/helper.rb",
     "test/test_skeleti.rb"
   ]
