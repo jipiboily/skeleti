@@ -14,6 +14,36 @@ You can generate MVCE skeleton app or add a VCE
 
 Usage note: you can use either 'ti' or 'skeleti' at prompt.
 
+== WHAT IT GENERATES
+
+ti.new generates those directories and files:
+	
+	app/controller/
+		application_controller.js (which includes the application view and event files)
+	app/event/
+		application_events.js
+	app/helper/
+		general_includes.js (put all your file includes that MUST be all around your app)
+	app/model/	(you should put something that could be called model. That could be API interface library or something else. Something that manage data)
+	app/view/
+		application_view.js (you should put window and tab definition here)
+	config/
+		application.js	(global config should go here)
+	
+	From now on, you do nothing in app.js but instead in the application_*.js.
+	
+	
+	
+ti g my_vce
+
+	app/controller/my_vce_controller.js  (which includes the two files below)
+		Business logic for "my_vce" shoud go here
+	app/event/my_vce_events.js
+		events for window "my_vce"
+	app/view/my_vce_view.js
+		UI management is here, no events, no logic, only UI.
+	
+
 == Contributing to skeleti
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet

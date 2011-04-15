@@ -22,7 +22,7 @@ def new_app
     puts "generate app skeleton..."
     mkdir 'app'
     mkdir 'app/controller'
-    mkdir 'app/events'
+    mkdir 'app/event'
     mkdir 'app/helper'
     mkdir 'app/model'
     mkdir 'app/view'
@@ -50,7 +50,7 @@ def generate mvce
   end
   msg "generating '" + mvce + "'..."
     
-  create_file "app/events/#{mvce}_events.js", "// Events for '#{mvce}'"
+  create_file "app/event/#{mvce}_events.js", "// Events for '#{mvce}'"
   create_file "app/view/#{mvce}_view.js", "// View for '#{mvce}'"
   if mvce != "application"
     create_file "app/controller/#{mvce}_controller.js", controller_content(mvce)
